@@ -7,3 +7,11 @@ function scrabbleScore(str){
   }
   return sum
 }
+
+function scrabbleScore(str){
+  let output = 0;
+  for (let i = 0; i < str.length; i++) {
+    output += $dict[str[i].toUpperCase()] || 0;
+  }
+  return output;
+}
