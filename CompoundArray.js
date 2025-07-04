@@ -8,3 +8,12 @@ function compoundArray(a, b) {
   }
    return newArr.concat(aArr).concat(bArr)
 }
+
+function compoundArray(a, b) {
+  let newArr = []
+  while (a.length > 0 && b.length > 0){
+    newArr.push(a.shift())
+    newArr.push(b.shift())
+  }
+   return newArr.concat(a).concat(b)
+}
