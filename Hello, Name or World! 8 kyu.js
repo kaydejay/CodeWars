@@ -8,7 +8,7 @@ function hello(name) {
     let capital = shift.toUpperCase();
     let joined = split.join('');
     let revisedName = capital + joined;
-    
+  
     return `Hello, ${revisedName}!` 
     }
 }
